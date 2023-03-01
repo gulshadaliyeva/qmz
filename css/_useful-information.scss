@@ -1,0 +1,86 @@
+#useful-information{
+    padding: 60px 0;
+    .title{
+        .content{
+            h1{
+                font-size: 27px;
+                font-weight: bold;
+            }
+            a{
+                color: #aeaeb4;
+                text-decoration: none;
+                border-bottom: 1px solid #aeaeb4;
+                font-size: 14px;
+                transition: all 0.3s ease;
+            }
+            &:hover{
+                a{
+                    color: #c21416;
+                    border-bottom: none;
+                }
+            }
+        }
+        }
+        .category{
+            .item{
+                margin-top: 30px;
+                box-shadow: 0px -1px 12px 2px #aaaaaa;
+                border-radius: 6px;
+                .img-wrapper{
+                    a{
+                        img{
+                            border-radius: 6px 6px 0 0px;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+                .content{
+                    height: 60px;
+                    p{
+                        color: black;
+                        font-size: 18px;
+                        font-weight: 600;
+                        padding: 15px 30px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 1199.98px){
+     #useful-information .category .item .content p{
+        padding: 9px 30px 0px 30px;
+        font-size: 16px;
+      }
+    }
+    @media (max-width: 991.98px){
+     #useful-information .category .item .content p{      
+        padding: 9px 30px 0px 30px;
+        font-size: 17px;
+    }
+    }
+    @media (max-width: 767.98px){
+     #useful-information .category .item .content p{
+        font-size: 16px;
+     }
+     #useful-information .title .content h1{
+        font-size: 20px;
+     }
+     #useful-information .title .content a{
+        font-size: 12px;
+     }
+
+    }
+    @media (max-width: 575.98px){
+        #useful-information .title .content h1{
+            font-size: 19px;
+        }
+        #useful-information .title .content a{
+            font-size: 11px;
+        }
+        #useful-information .title .content h1{
+            font-size: 16px;
+        }
+    }
+    

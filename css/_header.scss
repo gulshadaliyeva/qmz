@@ -1,0 +1,176 @@
+header {
+    padding: 8px 0;
+    .logo {
+        img {
+            height: 80px;
+        }
+
+        a {
+            display: flex;
+            color: black;
+            text-decoration: none;
+            font-size: 13px;
+            align-items: center;
+
+            p {
+                margin: 0;
+                width: 120px;
+                margin-left: 12px;
+            }
+        }
+    }
+
+    .menu {
+        ul {
+            list-style: none;
+            position: relative;
+
+            li {
+                margin-right: 20px;
+                line-height: 80px;
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                    font-weight: 600;
+                    transition: all .3s ease;
+                }
+                i {
+                    color: #c21416;
+                    transition: all .3s ease;
+                }
+                &:hover {
+                    a {
+                        opacity: .7;
+                    }
+                    i{
+                        transform: rotate(180deg)
+                    }
+                }
+            }
+            li.submenu-wrapper{
+                position: relative;
+                cursor: pointer;
+            }
+        }
+    }
+
+    ul.submenu {
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .3s ease;
+        box-shadow: rgb(0 0 0 / 16%) 0px 28px 52px 0px;
+        border-radius: 10px;
+        top: 70px;
+        left: -20px;
+        background-color: white;
+        width: 170px;
+        padding: 0;
+        font-size: 14px;
+        overflow: hidden;
+        li {
+            line-height: 50px;
+            margin: 0;
+            transition: all .3s ease;
+            padding-left: 22px;
+            &:hover{
+                background: whitesmoke;
+            }
+
+            &:hover {
+                a {
+                    background: rgba(245, 245, 245, 0.834);
+                }
+            }
+        }
+    }
+
+    li.submenu-wrapper {
+        &:hover {
+            ul.submenu {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+
+    ul.pro-sub{
+        width: 540px;
+        li{
+            width: 50%;
+        }
+    }
+    .item {
+        display: flex;
+
+        .price-offer {
+            a {
+                font-size: 15px;
+                padding: 15px 35px;
+                border-radius: 3px;
+                color: #fff;
+                background: #c21416;
+                text-decoration: none;
+                transition: all .3s ease;
+            }
+
+            &:hover {
+                a {
+                    background: #d42224;
+                }
+            }
+        }
+
+        .lang {
+            position: relative;
+            margin-left: 25px;
+
+            &:hover {
+                ul.category {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+
+            a {
+                color: #24243b;
+                font-weight: 700;
+                text-decoration: none;
+
+                i {
+                    color: #c21416;
+                }
+            }
+
+            ul.category {
+                background-color: white;
+                position: absolute;
+                visibility: hidden;
+                opacity: 0;
+                transition: all .3s ease;
+                box-shadow: rgb(0 0 0 / 10%) 0px 12px 57px 0px;
+                border-radius: 10px;
+                top: 23px;
+                left: -20px;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                li {
+                    padding: 6px;
+                    a {
+                        color: #6c7c93;
+                        font-weight: 600;
+                        transition: all .3s ease;
+                        padding: 12px;
+                    }
+
+                    &:hover {
+                        a {
+                            color: #24243b;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+#advantages{
+    padding: 60px 0;
+    .item{
+        .top{
+            position: relative;
+            p{
+                margin: 0;
+                font-weight: bold;
+                margin-top: 12px;
+            }
+            &::after, &::before{
+                position: absolute;
+                height: 164px;
+                width: 70px;
+                top: -40px;
+            }
+            &::before{
+                content: '';
+                background: url(../img/leafborder-left.svg);
+                left: 16px;
+            }
+            &::after{
+                content: '';
+                background: url(../img/leafborder-right.svg);
+                right: 16px;
+            }
+        }
+        .bottom{
+            p{
+                margin: 0;
+                color: #a7a7a7;
+                padding: 0 22px;
+                margin-top: 45px;
+            }
+        }
+    }
+    .item:first-child, .item:last-child{
+        margin-top: 55px;
+    }
+}
+@media (min-width: 992px){
+    #advantages .item .top p{
+        padding: 0 42px;
+    }
+    #advantages .item .bottom p {
+        padding: 0 35px;
+}
+}
+@media (min-width: 768px){
+    #advantages .item .bottom p{
+        margin-bottom:40px;
+        padding: 0 42px;
+    }
+}
+@media (min-width: 576px){
+    
+}

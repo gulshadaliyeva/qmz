@@ -1,0 +1,48 @@
+footer{
+    .information{
+        padding: 40px;
+        .content{
+            height: 100%;
+            border-right: 1px solid #e6ecf2;
+            p{
+                font-size: 14px
+            }
+        }
+        .item{
+            border-left: 1px solid #e6ecf2;
+            height: 100%;
+            p{
+                text-align: center;
+                font-size: 14px;
+            }
+            a{
+                color: black;
+                text-decoration: none;
+                transition: all .3 ease;
+                &:hover{
+                        color: #c21416;
+                }
+            }
+        }
+    }
+    .bottom{
+        p{
+            font-size: 13px;
+            color: #a7a7a7;
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}
+@media (max-width: 575.98px){
+    footer .information .content p{
+        font-size: 13px;
+    }
+    footer .information .item p{
+        font-size: 13px;
+    }
+    footer .bottom p{
+        font-size: 10px;
+    }
+}
